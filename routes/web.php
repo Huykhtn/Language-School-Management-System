@@ -30,7 +30,7 @@ use Illuminate\Http\Request;
 
 Route::get('/admin/dashboard/index', function () {
     return view('admin.dashboard.index');
-})->name('admin.dashboard.index')->middleware(['checkLogin']);
+})->name('admin.dashboard.index')->middleware(['checkLogin']); 
 
 // ----------------------------- Mail -------------------------//
 Route::get('send-mail', [SendMailController::class, 'send']);
